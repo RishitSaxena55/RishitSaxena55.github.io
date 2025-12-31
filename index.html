@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishit Saxena | ML Researcher & AI Engineer</title>
+    <meta name="description"
+        content="Portfolio of Rishit Saxena - ML Researcher specializing in 3D Vision, Differentiable Rendering, and AI Systems">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">RS</a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="greeting">Hi, I'm</span>
+                <span class="name" id="typed-name"></span>
+                <span class="cursor">|</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="role">ML Researcher</span>
+                <span class="divider">•</span>
+                <span class="role">3D Vision</span>
+                <span class="divider">•</span>
+                <span class="role">AI Engineer</span>
+            </p>
+            <p class="hero-description">
+                Building the future of AI through differentiable rendering, neural scene representations,
+                and agentic AI systems. Currently pursuing B.Tech at IIIT Guwahati.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    View Projects
+                </a>
+                <a href="Rishit_Saxena_CV (2).pdf" class="btn btn-secondary" download>
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/RishitSaxena55" target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:rishitsaxena55@gmail.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+917082968644" class="social-link" aria-label="Phone">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="window-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="window-title">gaussian_splatting.py</span>
+                </div>
+                <pre class="code-content"><code><span class="keyword">class</span> <span class="class-name">GaussianSplatting</span>:
+    <span class="keyword">def</span> <span class="function">render</span>(self, gaussians, camera):
+        <span class="comment"># Project 3D Gaussians to 2D</span>
+        projected = self.project(gaussians)
+        
+        <span class="comment"># Differentiable rasterization</span>
+        image = self.rasterize(projected)
+        
+        <span class="keyword">return</span> image</code></pre>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate <strong>Machine Learning Researcher</strong> with a deep focus on
+                        <strong>3D Computer Vision</strong>, <strong>Differentiable Rendering</strong>, and
+                        <strong>Neural Scene Representations</strong>. Currently pursuing my B.Tech in Computer
+                        Science at <strong>IIIT Guwahati</strong> with a CPI of <strong>9.2/10</strong>.
+                    </p>
+                    <p>
+                        My research interests span from implementing cutting-edge papers like
+                        <strong>3D Gaussian Splatting</strong> and <strong>NeRF</strong> from scratch to building
+                        practical <strong>Agentic AI systems</strong> and <strong>LLM-powered applications</strong>.
+                        I believe in understanding algorithms at their core — that's why I build from first principles.
+                    </p>
+                    <p>
+                        When I'm not training neural networks, I lead the <strong>ML community at IIIT Guwahati</strong>
+                        as the Machine Learning Club Coordinator, mentoring students and organizing workshops on
+                        cutting-edge AI topics.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">9.2</span>
+                        <span class="stat-label">CPI at IIIT Guwahati</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">ML/AI Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Research Areas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                Tech Stack
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Languages
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-brain"></i>
+                        ML/DL Frameworks
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Weights & Biases</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-robot"></i>
+                        Agentic AI
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">LangGraph</span>
+                        <span class="skill-tag">CrewAI</span>
+                        <span class="skill-tag">RAG Systems</span>
+                        <span class="skill-tag">OpenAI API</span>
+                        <span class="skill-tag">Gemini</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-cube"></i>
+                        Research Areas
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">3D Gaussian Splatting</span>
+                        <span class="skill-tag">NeRF</span>
+                        <span class="skill-tag">Differentiable Rendering</span>
+                        <span class="skill-tag">Spherical Harmonics</span>
+                        <span class="skill-tag">Variational Inference</span>
+                        <span class="skill-tag">Transformers</span>
+                        <span class="skill-tag">GANs</span>
+                        <span class="skill-tag">Early Exit Networks</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools & Libraries
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Streamlit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1: 3D Gaussian Splatting -->
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <img src="assets/gaussian_splatting.png" alt="3D Gaussian Splatting">
+                        <div class="project-overlay">
+                            <a href="https://github.com/RishitSaxena55/gaussian-splatting-pytorch" target="_blank"
+                                class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-label">Featured Project</span>
+                        <h3 class="project-title">3D Gaussian Splatting</h3>
+                        <p class="project-description">
+                            Pure PyTorch implementation of 3D Gaussian Splatting for novel view synthesis.
+                            Built fully differentiable Gaussian rasterizer from scratch, implementing forward
+                            and backward passes without CUDA kernels.
+                        </p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>Differentiable Rendering</span>
+                            <span>Spherical Harmonics</span>
+                            <span>3D Vision</span>
+                        </div>
+                        <a href="https://github.com/RishitSaxena55/gaussian-splatting-pytorch" target="_blank"
+                            class="project-btn">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2: TorchiFy -->
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <img src="assets/torchify.png" alt="TorchiFy Framework">
+                        <div class="project-overlay">
+                            <a href="https://github.com/RishitSaxena55/TorchiFy-v1" target="_blank"
+                                class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-label">Featured Project</span>
+                        <h3 class="project-title">TorchiFy-v1</h3>
+                        <p class="project-description">
+                            A modular deep learning framework built from first principles. Implements custom
+                            forward/backward passes for Transformer components including Multi-Head Attention
+                            and LayerNorm without high-level abstractions.
+                        </p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>Transformers</span>
+                            <span>GPT</span>
+                            <span>Whisper</span>
+                        </div>
+                        <a href="https://github.com/RishitSaxena55/TorchiFy-v1" target="_blank" class="project-btn">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3: AlphaEvolve -->
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <img src="assets/alpha_evolve.png" alt="AlphaEvolve">
+                        <div class="project-overlay">
+                            <a href="https://github.com/RishitSaxena55/AlphaEvolve" target="_blank"
+                                class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-label">Featured Project</span>
+                        <h3 class="project-title">AlphaEvolve</h3>
+                        <p class="project-description">
+                            An LLM-driven evolutionary agent for algorithmic discovery, inspired by Google
+                            DeepMind's AlphaEvolve. Features a custom-built evolutionary agent that leverages
+                            LLMs to discover and optimize algorithms from scratch.
+                        </p>
+                        <div class="project-tech">
+                            <span>LLMs</span>
+                            <span>Evolutionary AI</span>
+                            <span>Algorithm Discovery</span>
+                        </div>
+                        <a href="https://github.com/RishitSaxena55/AlphaEvolve" target="_blank" class="project-btn">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 4: NeRF -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/nerf.png" alt="NeRF Neural Radiance Fields">
+                        <div class="project-overlay">
+                            <a href="https://github.com/RishitSaxena55/NeRF-PyTorch-" target="_blank"
+                                class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">NeRF: Neural Radiance Fields</h3>
+                        <p class="project-description">
+                            3D scene reconstruction from scratch using deep learning. Implemented positional
+                            encoding and hierarchical volume sampling for photo-realistic rendering.
+                        </p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>Volume Rendering</span>
+                            <span>3D Reconstruction</span>
+                        </div>
+                        <a href="https://github.com/RishitSaxena55/NeRF-PyTorch-" target="_blank" class="project-btn">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 5: AI Hedge Fund -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/hedge_fund.png" alt="AI Hedge Fund Agent">
+                        <div class="project-overlay">
+                            <a href="https://github.com/RishitSaxena55/AI-Hedge-Fund-Agent" target="_blank"
+                                class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Hedge Fund Agent</h3>
+                        <p class="project-description">
+                            Multi-agent system with 8 specialized agents for stock analysis, risk assessment,
+                            and intrinsic valuation. Features real-time data, sentiment analysis, and VaR.
+                        </p>
+                        <div class="project-tech">
+                            <span>Multi-Agent</span>
+                            <span>LangChain</span>
+                            <span>Streamlit</span>
+                        </div>
+                        <a href="https://github.com/RishitSaxena55/AI-Hedge-Fund-Agent" target="_blank"
+                            class="project-btn">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 6: WhisprNet -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/whisprnet.png" alt="WhisprNet ASR">
+                        <div class="project-overlay">
+                            <a href="https://github.com/RishitSaxena55/WhisprNet" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">WhisprNet</h3>
+                        <p class="project-description">
+                            Encoder-Decoder Transformer for Automatic Speech Recognition. Uses multi-head
+                            self-attention and cross-attention for effective audio transcription.
+                        </p>
+                        <div class="project-tech">
+                            <span>Transformers</span>
+                            <span>ASR</span>
+                            <span>Attention</span>
+                        </div>
+                        <a href="https://github.com/RishitSaxena55/WhisprNet" target="_blank" class="project-btn">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 7: Medisyn -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/medisyn.png" alt="Medisyn Medical AI">
+                        <div class="project-overlay">
+                            <a href="https://github.com/RishitSaxena55/Medisyn" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Medisyn</h3>
+                        <p class="project-description">
+                            RAG-based system for medical research. Transforms medical literature into
+                            actionable insights for rare disease research.
+                        </p>
+                        <div class="project-tech">
+                            <span>RAG</span>
+                            <span>LLMs</span>
+                            <span>Medical AI</span>
+                        </div>
+                        <a href="https://github.com/RishitSaxena55/Medisyn" target="_blank" class="project-btn">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 8: EENet -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/eenet.png" alt="EENet Early Exit">
+                        <div class="project-overlay">
+                            <a href="https://github.com/RishitSaxena55/EENet" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">EENet</h3>
+                        <p class="project-description">
+                            Early Exit Networks with ResNet backbone for resource-efficient inference.
+                            Supports MNIST, CIFAR10, SVHN, Tiny-ImageNet, and ImageNet.
+                        </p>
+                        <div class="project-tech">
+                            <span>ResNet</span>
+                            <span>Efficient ML</span>
+                            <span>Early Exit</span>
+                        </div>
+                        <a href="https://github.com/RishitSaxena55/EENet" target="_blank" class="project-btn">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 9: VAE Face Generation -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/vae_faces.png" alt="VAE Face Generation">
+                        <div class="project-overlay">
+                            <a href="https://github.com/RishitSaxena55/Face-Generation-Using-AutoEncoders-and-Variational-AutoEncoders"
+                                target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">VAE Face Generation</h3>
+                        <p class="project-description">
+                            Face generation using VAE and Autoencoder on LFW dataset. Features latent space
+                            interpolation and reparameterization trick implementation.
+                        </p>
+                        <div class="project-tech">
+                            <span>VAE</span>
+                            <span>Generative AI</span>
+                            <span>MTCNN</span>
+                        </div>
+                        <a href="https://github.com/RishitSaxena55/Face-Generation-Using-AutoEncoders-and-Variational-AutoEncoders"
+                            target="_blank" class="project-btn">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 10: Face Recognition -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/face_recognition.png" alt="Face Recognition">
+                        <div class="project-overlay">
+                            <a href="https://github.com/RishitSaxena55/Face-Recognition-System-using-Keras-and-FaceNet"
+                                target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Face Recognition System</h3>
+                        <p class="project-description">
+                            Deep learning face recognition using Keras, FaceNet, and OpenCV. Compares facial
+                            embeddings against a known database for identification.
+                        </p>
+                        <div class="project-tech">
+                            <span>FaceNet</span>
+                            <span>Keras</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <a href="https://github.com/RishitSaxena55/Face-Recognition-System-using-Keras-and-FaceNet"
+                            target="_blank" class="project-btn">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                Experience
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Research Intern</h3>
+                            <span class="timeline-company">IIIT Guwahati</span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i>
+                            Aug 2024 – Present
+                        </span>
+                        <ul class="timeline-description">
+                            <li>Conducted in-depth research on <strong>Early Exit Networks (EENs)</strong>, developing
+                                novel architectures to monitor human body states and reduce computational overhead</li>
+                            <li>Investigated and applied <strong>quantization techniques</strong> to large-scale ML
+                                models to decrease model size and inference latency</li>
+                            <li>Collaborated with faculty on experimental design, data analysis, and research findings
+                                preparation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Machine Learning Club Coordinator</h3>
+                            <span class="timeline-company">Maverics, IIIT Guwahati</span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i>
+                            May 2025 – Present
+                        </span>
+                        <ul class="timeline-description">
+                            <li>Led a community of students, fostering a collaborative environment for learning and
+                                innovation in <strong>AI and ML</strong></li>
+                            <li>Organized technical workshops, guest lectures, and coding competitions on <strong>Deep
+                                    Learning, NLP, and Computer Vision</strong></li>
+                            <li>Mentored junior members on personal and academic projects, providing technical guidance
+                                and support</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">B.Tech Computer Science and Engineering</h3>
+                            <span class="timeline-company">Indian Institute of Information Technology, Guwahati</span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i>
+                            Aug 2025 – Present
+                        </span>
+                        <ul class="timeline-description">
+                            <li>Maintaining a <strong>CPI of 9.2/10</strong></li>
+                            <li>Focus on Machine Learning, Computer Vision, and AI Systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span>
+                Get In Touch
+            </h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    I'm actively looking for <strong>research internship opportunities</strong> in
+                    3D Computer Vision, Neural Rendering, and AI. Whether you have a question,
+                    a collaboration idea, or just want to say hi, I'd love to hear from you!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:rishitsaxena55@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">rishitsaxena55@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/RishitSaxena55" target="_blank" class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">RishitSaxena55</span>
+                    </a>
+                    <a href="tel:+917082968644" class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">+91 7082968644</span>
+                    </a>
+                </div>
+                <a href="mailto:rishitsaxena55@gmail.com" class="btn btn-primary btn-large">
+                    <i class="fas fa-paper-plane"></i>
+                    Say Hello
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                Designed & Built by <strong>Rishit Saxena</strong>
+            </p>
+            <p class="footer-copyright">
+                © 2024 All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

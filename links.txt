@@ -1,0 +1,15 @@
+﻿=== ALL EMBEDDED LINKS IN RESUME ===
+
+mailto:rishitsaxena55@gmail.com
+tel:+91 7082968644
+https://github.com/RishitSaxena55
+https://github.com/RishitSaxena55/TorchiFy-v1
+https://github.com/RishitSaxena55/gaussian-splatting-pytorch
+https://github.com/RishitSaxena55/AlphaEvolve
+https://github.com/RishitSaxena55/AI-Hedge-Fund-Agent
+https://github.com/RishitSaxena55/NeRF-PyTorch-
+https://github.com/RishitSaxena55/WhisprNet
+https://github.com/RishitSaxena55/Medisyn
+https://github.com/RishitSaxena55/EENet
+https://github.com/RishitSaxena55/Face-Generation-Using-AutoEncoders-and-Variational-AutoEncoders
+https://github.com/RishitSaxena55/Face-Recognition-System-using-Keras-and-FaceNet
