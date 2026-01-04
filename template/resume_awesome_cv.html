@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishit Saxena - Resume (Awesome CV Style)</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --awesome-red: #DC3522;
+            --awesome-darkgray: #333;
+            --awesome-gray: #5D5D5D;
+            --awesome-lightgray: #999;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: var(--awesome-darkgray);
+            background: #fff;
+            padding: 0.6in;
+            max-width: 8.5in;
+            margin: 0 auto;
+        }
+
+        a {
+            color: var(--awesome-gray);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--awesome-red);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-family: 'Roboto', sans-serif;
+            font-size: 32pt;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 4px;
+        }
+
+        .name-first {
+            color: var(--awesome-darkgray);
+        }
+
+        .name-last {
+            color: var(--awesome-red);
+            font-weight: 700;
+        }
+
+        .position {
+            font-size: 11pt;
+            color: var(--awesome-gray);
+            margin-bottom: 8px;
+        }
+
+        .position-sep {
+            margin: 0 8px;
+            color: var(--awesome-lightgray);
+        }
+
+        .contact {
+            font-size: 9pt;
+            color: var(--awesome-gray);
+        }
+
+        .contact a {
+            margin: 0 8px;
+        }
+
+        .contact-sep {
+            color: var(--awesome-lightgray);
+        }
+
+        .section {
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-size: 14pt;
+            font-weight: 700;
+            color: var(--awesome-red);
+            border-bottom: 2px solid var(--awesome-red);
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .entry {
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .entry-left {
+            flex: 1;
+        }
+
+        .entry-right {
+            text-align: right;
+            color: var(--awesome-lightgray);
+            font-size: 9pt;
+            min-width: 120px;
+        }
+
+        .entry-title {
+            font-weight: 700;
+            font-size: 11pt;
+            color: var(--awesome-darkgray);
+        }
+
+        .entry-org {
+            font-weight: 600;
+            color: var(--awesome-gray);
+        }
+
+        .entry-details {
+            margin-top: 4px;
+            padding-left: 15px;
+        }
+
+        .entry-details li {
+            margin-bottom: 2px;
+            color: var(--awesome-gray);
+        }
+
+        .project {
+            margin-bottom: 10px;
+        }
+
+        .project-title {
+            font-weight: 700;
+            font-size: 11pt;
+            color: var(--awesome-darkgray);
+        }
+
+        .project-tech {
+            font-size: 9pt;
+            color: var(--awesome-lightgray);
+            font-style: italic;
+        }
+
+        .project-link {
+            font-size: 8pt;
+            color: var(--awesome-red);
+        }
+
+        .project-desc {
+            margin-top: 3px;
+            padding-left: 15px;
+        }
+
+        .project-desc li {
+            margin-bottom: 2px;
+            color: var(--awesome-gray);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 4px 10px;
+        }
+
+        .skill-label {
+            font-weight: 600;
+            color: var(--awesome-darkgray);
+        }
+
+        .skill-value {
+            color: var(--awesome-gray);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 8pt;
+            color: var(--awesome-lightgray);
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            @page {
+                margin: 0.5in;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="name"><span class="name-first">Rishit</span> <span class="name-last">Saxena</span></h1>
+        <div class="position">
+            ML Researcher <span class="position-sep">·</span>
+            3D Computer Vision <span class="position-sep">·</span>
+            Generative AI
+        </div>
+        <div class="contact">
+            <a href="mailto:rishitsaxena55@gmail.com">📧 rishitsaxena55@gmail.com</a>
+            <span class="contact-sep">|</span>
+            <span>📱 +91 7082968644</span>
+            <span class="contact-sep">|</span>
+            <a href="https://github.com/RishitSaxena55">💻 GitHub</a>
+            <span class="contact-sep">|</span>
+            <a href="https://linkedin.com/in/rishit-saxena-12922531b">🔗 LinkedIn</a>
+            <span class="contact-sep">|</span>
+            <a href="https://rishitsaxena55.github.io">🌐 Portfolio</a>
+            <span class="contact-sep">|</span>
+            <a href="https://x.com/SaxenaRishit55">𝕏 X</a>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="entry">
+            <div class="entry-left">
+                <div class="entry-title">B.Tech in Computer Science & Engineering</div>
+                <div class="entry-org">Indian Institute of Information Technology Guwahati</div>
+                <ul class="entry-details">
+                    <li>CPI: 9.23/10.0</li>
+                </ul>
+            </div>
+            <div class="entry-right">
+                Guwahati, India<br>
+                Aug 2024 - Apr 2028
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="entry">
+            <div class="entry-left">
+                <div class="entry-title">Research Intern</div>
+                <div class="entry-org">Indian Institute of Information Technology Guwahati</div>
+                <ul class="entry-details">
+                    <li>Researching <strong>Early Exit Networks (EENs)</strong> for efficient inference in
+                        resource-constrained robotic environments</li>
+                    <li>Developed <strong>INT8 quantization pipelines</strong> achieving 4.5ms CPU inference for
+                        real-time applications</li>
+                    <li>Working on model compression techniques for edge deployment of Generative AI systems</li>
+                </ul>
+            </div>
+            <div class="entry-right">
+                Guwahati, India<br>
+                May 2025 - Present
+            </div>
+        </div>
+        <div class="entry">
+            <div class="entry-left">
+                <div class="entry-title">ML Club Coordinator</div>
+                <div class="entry-org">Maverics, Indian Institute of Information Technology Guwahati</div>
+                <ul class="entry-details">
+                    <li>Leading AI/ML community with 50+ active members; organizing workshops on Deep Learning and
+                        Computer Vision</li>
+                    <li>Mentoring students on research projects in neural rendering, object detection, and efficient ML
+                    </li>
+                </ul>
+            </div>
+            <div class="entry-right">
+                Guwahati, India<br>
+                Aug 2025 - Present
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Research Projects</h2>
+
+        <div class="project">
+            <div class="project-title">3D Gaussian Splatting</div>
+            <div class="project-tech">PyTorch, Differentiable Rendering, Spherical Harmonics, 3D Vision</div>
+            <div class="project-link"><a href="https://github.com/RishitSaxena55/gaussian-splatting-pytorch">GitHub</a>
+            </div>
+            <ul class="project-desc">
+                <li>Built complete differentiable Gaussian rasterizer from scratch achieving real-time novel view
+                    synthesis</li>
+                <li>Implemented 3D-to-2D projection, Spherical Harmonics for view-dependent color, adaptive density
+                    control</li>
+                <li>Developed Clone/Split/Prune strategies scaling from 50K to 300K+ Gaussians during training</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title">NeRF: Neural Radiance Fields</div>
+            <div class="project-tech">PyTorch, Volume Rendering, Neural Rendering, Positional Encoding</div>
+            <div class="project-link"><a href="https://github.com/RishitSaxena55/NeRF-PyTorch-">GitHub</a></div>
+            <ul class="project-desc">
+                <li>Engineered differentiable volume rendering pipeline from scratch with positional encoding</li>
+                <li>Implemented hierarchical sampling (coarse-to-fine) for computational efficiency</li>
+                <li>Achieved photo-realistic 3D reconstruction with novel view synthesis capabilities</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Faster R-CNN: Object Detection</div>
+            <div class="project-tech">PyTorch, Deep Learning, Region Proposal Network, Object Detection</div>
+            <div class="project-link"><a href="https://github.com/RishitSaxena55/Faster-R-CNN">GitHub</a></div>
+            <ul class="project-desc">
+                <li>Implemented complete Faster R-CNN architecture from scratch including Region Proposal Network</li>
+                <li>Built RoI pooling layer and multi-task loss function; trained on Pascal VOC dataset</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title">TorchiFy-v1: Deep Learning Framework</div>
+            <div class="project-tech">Python, Autograd, Transformers, Multi-Head Attention</div>
+            <div class="project-link"><a href="https://github.com/RishitSaxena55/TorchiFy-v1">GitHub</a></div>
+            <ul class="project-desc">
+                <li>Built DL framework from first principles with custom autograd engine and computational graph</li>
+                <li>Implemented Multi-Head Attention and LayerNorm with custom backward passes; supports GPT/Whisper
+                </li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title">EENet - Early Exit Networks</div>
+            <div class="project-tech">ResNet, Efficient ML, Model Optimization, Adaptive Inference</div>
+            <div class="project-link"><a href="https://github.com/RishitSaxena55/EENet">GitHub</a></div>
+            <ul class="project-desc">
+                <li>Built Early Exit Networks with ResNet backbone for resource-efficient inference</li>
+                <li>Supports MNIST, CIFAR10, SVHN, Tiny-ImageNet, ImageNet with instance-dependent computation</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <span class="skill-label">Languages</span>
+            <span class="skill-value">Python, C++, C, Java, SQL, CUDA</span>
+            <span class="skill-label">ML Frameworks</span>
+            <span class="skill-value">PyTorch, TensorFlow, JAX, Scikit-learn, NumPy, Pandas, Weights & Biases</span>
+            <span class="skill-label">3D Vision</span>
+            <span class="skill-value">3D Gaussian Splatting, NeRF, Differentiable Rendering, Volume Rendering, SLAM,
+                SfM</span>
+            <span class="skill-label">Generative AI</span>
+            <span class="skill-value">Transformers, LLMs, RAG, LoRA/PEFT, LangChain, LangGraph, GANs, VAEs</span>
+            <span class="skill-label">Efficient ML</span>
+            <span class="skill-value">Quantization (INT8), Pruning, Early Exit Networks, ONNX, TFLite, Edge
+                Deployment</span>
+        </div>
+    </section>
+
+    <footer class="footer">
+        Rishit Saxena · Resume · Updated January 2026
+    </footer>
+</body>
+
+</html>

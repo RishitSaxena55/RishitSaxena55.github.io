@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 11pt;
+            color: #000;
+            line-height: 1.6;
+            max-width: 750px;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        a {
+            color: #1155cc;
+            text-decoration: underline;
+        }
+
+        .subject {
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 20px 0;
+        }
+
+        .highlight {
+            background: #eff6ff;
+            padding: 12px;
+            border-left: 4px solid #3b82f6;
+            margin: 15px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        th {
+            background: #f8f9fa;
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="subject">
+        <strong>To:</strong> (via CMU directory)<br><br>
+        <strong>Subject:</strong> Summer Research Application: Differentiable Rendering — Built 3DGS & NeRF Backward
+        Passes from Scratch (IIIT Guwahati)
+    </div>
+
+    <p>Dear Professor Gkioulekas,</p>
+
+    <p>I am <strong>Rishit Saxena</strong>, a second-year CS student at IIIT Guwahati, India (CPI: 9.23/10). Your work
+        on <strong>differentiable rendering</strong> and <strong>physics-based computational imaging</strong> directly
+        aligns with my research philosophy of building systems from first principles.</p>
+
+    <p>I am writing to express my interest in a <strong>summer research internship (May–August 2026)</strong> in your
+        Computational Imaging lab.</p>
+
+    <hr class="divider">
+
+    <div class="highlight">
+        <strong>Why Your Work Inspires Me:</strong><br>
+        Your <strong>"A differential theory of radiative transfer"</strong> (TOG 2019) and work on <strong>inverse
+            volume rendering</strong> fundamentally shaped how I approach rendering. Instead of using existing
+        libraries, I implemented the <em>backward passes</em> for differentiable rendering from scratch — deriving
+        gradients for Spherical Harmonics, 3D covariances, and volume rendering.
+    </div>
+
+    <p><strong>My Differentiable Rendering Work:</strong></p>
+
+    <table>
+        <tr>
+            <th>Project</th>
+            <td><strong><a href="https://github.com/RishitSaxena55/gaussian-splatting-pytorch">3D Gaussian
+                        Splatting</a></strong></td>
+        </tr>
+        <tr>
+            <th>What I Built</th>
+            <td>Complete differentiable rasterizer from scratch: SfM initialization → <strong>Custom backward
+                    passes</strong> for 3D covariance gradients and <strong>Spherical Harmonics (Degree 3)</strong> →
+                Adaptive density control</td>
+        </tr>
+        <tr>
+            <th>Technical Challenge</th>
+            <td>Deriving gradients for the 3D-to-2D covariance projection and implementing SH backward pass manually —
+                not relying on autograd</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Project</th>
+            <td><strong><a href="https://github.com/RishitSaxena55/NeRF-PyTorch-">NeRF (Neural Radiance
+                        Fields)</a></strong></td>
+        </tr>
+        <tr>
+            <th>What I Built</th>
+            <td>Pure PyTorch implementation with <strong>stratified sampling</strong> and <strong>hierarchical volume
+                    sampling</strong> — Monte Carlo integration for rendering</td>
+        </tr>
+        <tr>
+            <th>Connection</th>
+            <td>Monte Carlo sampling strategies align with your work on <strong>path tracing estimators</strong> and
+                physics-based rendering</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Project</th>
+            <td><strong><a href="https://github.com/RishitSaxena55/TorchiFy-v1">TorchiFy</a></strong></td>
+        </tr>
+        <tr>
+            <th>What I Built</th>
+            <td>PyTorch-like DL framework from scratch — Autograd engine, Multi-Head Attention, custom backward passes
+            </td>
+        </tr>
+        <tr>
+            <th>Relevance</th>
+            <td>Deep understanding of gradient propagation — essential for differentiable rendering research</td>
+        </tr>
+    </table>
+
+    <hr class="divider">
+
+    <p><strong>What Excites Me About Your Lab:</strong></p>
+    <ul>
+        <li><strong>Differentiable rendering theory</strong> — I want to go deeper into the mathematical foundations
+        </li>
+        <li><strong>Non-line-of-sight imaging</strong> — fascinating application of physics-based methods</li>
+        <li><strong>Inverse rendering</strong> — optimization problems similar to 3DGS training</li>
+    </ul>
+
+    <p><strong>Links:</strong> <a href="https://rishitsaxena55.github.io">Portfolio</a> | <a
+            href="https://github.com/RishitSaxena55">GitHub</a> | <a
+            href="https://linkedin.com/in/rishit-saxena-12922531b">LinkedIn</a></p>
+
+    <p>Thank you for your time.</p>
+
+    <p>Best regards,<br>
+        <strong>Rishit Saxena</strong><br>
+        rishitsaxena55@gmail.com | +91 7082968644
+    </p>
+
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%-------------------------
+% Awesome CV Template
+% Author: Rishit Saxena
+% Based on: https://github.com/posquit0/Awesome-CV
+%-------------------------
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+\colorlet{awesome}{awesome-red}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\name{Rishit}{Saxena}
+\position{ML Researcher{\enskip\cdotp\enskip}3D Computer Vision{\enskip\cdotp\enskip}Generative AI}
+\address{Indian Institute of Information Technology Guwahati, India}
+
+\mobile{(+91) 7082968644}
+\email{rishitsaxena55@gmail.com}
+\homepage{rishitsaxena55.github.io}
+\github{RishitSaxena55}
+\linkedin{rishit-saxena-12922531b}
+\extrainfo{\href{https://x.com/SaxenaRishit55}{x.com/SaxenaRishit55}}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today}
+  {Rishit Saxena~~~·~~~Resume}
+  {\thepage}
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	SECTION: Education
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+\begin{cventries}
+
+  \cventry
+    {B.Tech in Computer Science \& Engineering}
+    {Indian Institute of Information Technology Guwahati}
+    {Guwahati, India}
+    {Aug 2024 - Apr 2028}
+    {
+      \begin{cvitems}
+        \item {CPI: 9.23/10.0}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+%	SECTION: Experience
+%-------------------------------------------------------------------------------
+\cvsection{Experience}
+
+\begin{cventries}
+
+  \cventry
+    {Research Intern}
+    {Indian Institute of Information Technology Guwahati}
+    {Guwahati, India}
+    {May 2025 - Present}
+    {
+      \begin{cvitems}
+        \item {Researching \textbf{Early Exit Networks (EENs)} for efficient inference in resource-constrained robotic environments}
+        \item {Developed \textbf{INT8 quantization pipelines} achieving 4.5ms CPU inference for real-time applications}
+        \item {Working on model compression techniques for edge deployment of Generative AI systems}
+      \end{cvitems}
+    }
+
+  \cventry
+    {ML Club Coordinator}
+    {Maverics, Indian Institute of Information Technology Guwahati}
+    {Guwahati, India}
+    {Aug 2025 - Present}
+    {
+      \begin{cvitems}
+        \item {Leading AI/ML community with 50+ active members; organizing workshops on Deep Learning and Computer Vision}
+        \item {Mentoring students on research projects in neural rendering, object detection, and efficient ML}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+%	SECTION: Projects
+%-------------------------------------------------------------------------------
+\cvsection{Research Projects}
+
+\begin{cventries}
+
+  \cventry
+    {PyTorch, Differentiable Rendering, Spherical Harmonics, 3D Vision}
+    {3D Gaussian Splatting}
+    {\href{https://github.com/RishitSaxena55/gaussian-splatting-pytorch}{GitHub}}
+    {}
+    {
+      \begin{cvitems}
+        \item {Built complete differentiable Gaussian rasterizer from scratch achieving real-time novel view synthesis}
+        \item {Implemented 3D-to-2D projection, Spherical Harmonics for view-dependent color, adaptive density control}
+        \item {Developed Clone/Split/Prune strategies scaling from 50K to 300K+ Gaussians during training}
+      \end{cvitems}
+    }
+
+  \cventry
+    {PyTorch, Volume Rendering, Neural Rendering, Positional Encoding}
+    {NeRF: Neural Radiance Fields}
+    {\href{https://github.com/RishitSaxena55/NeRF-PyTorch-}{GitHub}}
+    {}
+    {
+      \begin{cvitems}
+        \item {Engineered differentiable volume rendering pipeline from scratch with positional encoding}
+        \item {Implemented hierarchical sampling (coarse-to-fine) for computational efficiency}
+        \item {Achieved photo-realistic 3D reconstruction with novel view synthesis capabilities}
+      \end{cvitems}
+    }
+
+  \cventry
+    {PyTorch, Deep Learning, Region Proposal Network, Object Detection}
+    {Faster R-CNN: Object Detection}
+    {\href{https://github.com/RishitSaxena55/Faster-R-CNN}{GitHub}}
+    {}
+    {
+      \begin{cvitems}
+        \item {Implemented complete Faster R-CNN architecture from scratch including Region Proposal Network}
+        \item {Built RoI pooling layer and multi-task loss function; trained on Pascal VOC dataset}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Python, Autograd, Transformers, Multi-Head Attention}
+    {TorchiFy-v1: Deep Learning Framework}
+    {\href{https://github.com/RishitSaxena55/TorchiFy-v1}{GitHub}}
+    {}
+    {
+      \begin{cvitems}
+        \item {Built DL framework from first principles with custom autograd engine and computational graph}
+        \item {Implemented Multi-Head Attention and LayerNorm with custom backward passes; supports GPT/Whisper}
+      \end{cvitems}
+    }
+
+  \cventry
+    {ResNet, Efficient ML, Model Optimization, Adaptive Inference}
+    {EENet - Early Exit Networks}
+    {\href{https://github.com/RishitSaxena55/EENet}{GitHub}}
+    {}
+    {
+      \begin{cvitems}
+        \item {Built Early Exit Networks with ResNet backbone for resource-efficient inference}
+        \item {Supports MNIST, CIFAR10, SVHN, Tiny-ImageNet, ImageNet with instance-dependent computation}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+%	SECTION: Skills
+%-------------------------------------------------------------------------------
+\cvsection{Technical Skills}
+
+\begin{cvskills}
+
+  \cvskill
+    {Languages}
+    {Python, C++, C, Java, SQL, CUDA}
+
+  \cvskill
+    {ML Frameworks}
+    {PyTorch, TensorFlow, JAX, Scikit-learn, NumPy, Pandas, Weights \& Biases}
+
+  \cvskill
+    {3D Vision}
+    {3D Gaussian Splatting, NeRF, Differentiable Rendering, Volume Rendering, SLAM, SfM}
+
+  \cvskill
+    {Generative AI}
+    {Transformers, LLMs, RAG, LoRA/PEFT, LangChain, LangGraph, GANs, VAEs}
+
+  \cvskill
+    {Efficient ML}
+    {Quantization (INT8), Pruning, Early Exit Networks, ONNX, TFLite, Edge Deployment}
+
+\end{cvskills}
+
+%-------------------------------------------------------------------------------
+\end{document}

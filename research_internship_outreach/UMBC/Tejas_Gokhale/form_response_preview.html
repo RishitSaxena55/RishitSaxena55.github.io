@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 11pt;
+            color: #000;
+            line-height: 1.6;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #6750a4;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #6750a4;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .field {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #6750a4;
+        }
+
+        .field-label {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .field-value {
+            color: #444;
+        }
+
+        a {
+            color: #1155cc;
+            text-decoration: underline;
+        }
+
+        .warning {
+            background: #fef3c7;
+            padding: 12px;
+            border-left: 4px solid #f59e0b;
+            margin: 15px 0;
+        }
+
+        .note {
+            background: #ecfdf5;
+            padding: 12px;
+            border-left: 4px solid #10b981;
+            margin: 15px 0;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 10pt;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🔖 Form Response Preview: Tejas Gokhale (UMBC)</h1>
+
+    <div class="warning">
+        ⚠️ <strong>IMPORTANT:</strong> Professor Gokhale requires a <strong>Google Form submission</strong>, NOT email.
+        <br>Form link: <a href="https://tejasgokhale.com">Check his website for the form</a>
+        <br>This is a preview of the answers to prepare before filling the form.
+    </div>
+
+    <div class="note">
+        ✅ <strong>Good sign:</strong> He has Indian background (BITS Pilani → CMU → ASU) and may appreciate
+        IIIT Guwahati students. His research on spatial reasoning and domain generalization aligns strongly with your
+        work.
+    </div>
+
+    <h2>📋 Form Fields</h2>
+
+    <div class="field">
+        <div class="field-label">Name *</div>
+        <div class="field-value">Rishit Saxena</div>
+    </div>
+
+    <div class="field">
+        <div class="field-label">Current Position and Affiliation *</div>
+        <div class="field-value">Second-year B.Tech Computer Science student at Indian Institute of Information
+            Technology Guwahati (CPI: 9.23/10)</div>
+    </div>
+
+    <div class="field">
+        <div class="field-label">Currently enrolled in *</div>
+        <div class="field-value">Undergraduate program NOT in UMBC</div>
+    </div>
+
+    <div class="field">
+        <div class="field-label">Seeking position *</div>
+        <div class="field-value">Undergraduate Research</div>
+    </div>
+
+    <div class="field">
+        <div class="field-label">Years of Experience Working in Machine Learning *</div>
+        <div class="field-value">2</div>
+    </div>
+
+    <div class="field">
+        <div class="field-label">Years of Experience Working in Computer Vision *</div>
+        <div class="field-value">2</div>
+    </div>
+
+    <div class="field">
+        <div class="field-label">Link to webpage</div>
+        <div class="field-value"><a href="https://rishitsaxena55.github.io">https://rishitsaxena55.github.io</a></div>
+    </div>
+
+    <div class="field">
+        <div class="field-label">Link to CV/Resume *</div>
+        <div class="field-value"><a
+                href="https://rishitsaxena55.github.io/resume">https://rishitsaxena55.github.io/resume</a>
+            <br><em>(Upload the tailored resume to your portfolio site first)</em>
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="field-label">Name, Position, Email of at least 2 recommenders</div>
+        <div class="field-value">
+            <em>[To be filled with your actual recommenders]</em><br>
+            Example format:<br>
+            Dr. [Name], Assistant Professor, IIIT Guwahati, email@iiitg.ac.in
+        </div>
+    </div>
+
+    <h2>📝 Key Essay Questions</h2>
+
+    <div class="field">
+        <div class="field-label">Mention one of your favorite papers and why!</div>
+        <textarea rows="6" readonly>
+"NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis" (Mildenhall et al., ECCV 2020)
+
+This paper fundamentally changed how I think about 3D representation. Instead of explicit geometry, NeRF encodes scenes as continuous functions — elegant and powerful. I implemented it from scratch to understand every component: positional encoding for high-frequency details, hierarchical sampling for efficiency, and volume rendering for differentiable image synthesis.
+
+What I love most: it's a perfect example of "understanding through building" — the philosophy I apply to all my projects. I don't just use frameworks; I build them to understand how they work.</textarea>
+    </div>
+
+    <div class="field">
+        <div class="field-label">Mention one of Tejas' papers that you find relevant to your interests and why</div>
+        <textarea rows="8" readonly>
+"Benchmarking Spatial Relationships in Text-to-Image Generation" (VISOR metric)
+
+This paper directly connects to my 3D vision work. Your finding that T2I models struggle with spatial relationships (left/right/above/below) resonated deeply — spatial understanding requires geometric reasoning, which is what I've been building through NeRF and 3D Gaussian Splatting.
+
+My 3DGS implementation computes explicit 3D covariance gradients — I understand how 3D structure enables 2D spatial reasoning. I believe combining differentiable 3D representations with T2I could improve spatial consistency: if models "understood" 3D, they'd get 2D spatial relationships right.
+
+Your SPRIGHT dataset (ECCV 2024) extends this beautifully — the idea that proper spatial captions can teach models spatial reasoning is elegant and practical.</textarea>
+    </div>
+
+    <div class="field">
+        <div class="field-label">Programming Languages/Libraries you have experience with</div>
+        <div class="field-value">
+            ✅ Python<br>
+            ✅ Pytorch<br>
+            ✅ C / C++ / Java<br>
+            ✅ Other: NumPy, Pandas, Matplotlib, Weights & Biases, Hugging Face, CUDA, Git, Linux
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="field-label">What are your interests outside of computer science?</div>
+        <textarea rows="3" readonly>
+Philosophy (particularly epistemology — how we know what we know), history of science, and competitive programming. I enjoy understanding how ideas evolve and connect across fields. Like you, I believe in asking fundamental questions rather than just optimizing metrics.</textarea>
+    </div>
+
+    <div class="field">
+        <div class="field-label">Mention three of your favorite books/movies/songs/TV shows/podcasts and why (one per
+            line)</div>
+        <textarea rows="6" readonly>
+1. "Gödel, Escher, Bach" by Douglas Hofstadter — A masterpiece connecting mathematics, art, and cognition. It shaped how I think about recursion, self-reference, and the nature of intelligence. Directly relevant to understanding how neural networks learn representations.
+
+2. "Interstellar" (2019) — The way it visualizes higher-dimensional concepts (tesseract, wormholes) mirrors my interest in 3D/4D representations. Also: Kip Thorne's physics consulting shows how rigorous science can enable beautiful storytelling.
+
+3. "Lex Fridman Podcast" — Conversations with researchers across AI, physics, and philosophy. I especially loved the episodes with Andrej Karpathy on neural networks and understanding fundamentals rather than just using tools.</textarea>
+    </div>
+
+    <div class="field">
+        <div class="field-label">ADDITIONAL INFORMATION</div>
+        <textarea rows="12" readonly>
+**Why Cognitive Vision Group:**
+Your research philosophy — concept-level characterization, reasoning under incomplete information, adapting to novelty — aligns perfectly with what I'm building. My from-scratch implementations (NeRF, 3DGS, TorchiFy) demonstrate that I don't just call APIs; I understand mechanisms.
+
+**My Relevant Projects:**
+• 3D Gaussian Splatting: Differentiable rasterizer with custom backward passes for 3D covariance — explicit spatial representations
+• NeRF: Pure PyTorch implementation — understanding volumetric rendering fundamentals
+• TorchiFy: PyTorch-like framework — Autograd, Attention, all custom backward passes
+• EENet: Early Exit Networks with 40% latency reduction — efficient inference under varying complexity
+
+**Specific Contribution Idea:**
+Your VISOR work shows T2I models struggle with spatial relationships. I'd love to explore using 3D understanding to improve spatial consistency — if T2I models could internally reason about 3D structure (via differentiable rendering), they might generate more spatially accurate images. My 3DGS backward passes could help bridge this gap.
+
+**Availability:**
+Remote immediately, on-site Summer 2026 if available. Flexible and committed.</textarea>
+    </div>
+
+    <h2>📎 Attachments</h2>
+    <div class="field">
+        <div class="field-label">Resume (PDF)</div>
+        <div class="field-value">
+            Convert <code>resume.html</code> to PDF and upload to your portfolio site.<br>
+            Ensure the link works: <a
+                href="https://rishitsaxena55.github.io/resume">https://rishitsaxena55.github.io/resume</a>
+        </div>
+    </div>
+
+    <h2>✅ Submission Checklist</h2>
+    <ul>
+        <li>☐ Upload tailored resume PDF to portfolio site</li>
+        <li>☐ Verify all links work (Portfolio, GitHub, LinkedIn)</li>
+        <li>☐ Fill Google Form on his website</li>
+        <li>☐ <strong>DO NOT send separate email</strong> — form only</li>
+    </ul>
+
+</body>
+
+</html>

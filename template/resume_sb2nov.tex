@@ -1,0 +1,168 @@
+%-------------------------
+% Resume - sb2nov Template (Google-style)
+% Author: Rishit Saxena
+% Based on: https://github.com/sb2nov/resume
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+\usepackage[sfdefault]{roboto}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Rishit Saxena} \\ \vspace{1pt}
+    \small ML Researcher $|$ 3D Computer Vision $|$ Generative AI $|$ Efficient ML \\ \vspace{3pt}
+    \small +91 7082968644 $|$ 
+    \href{mailto:rishitsaxena55@gmail.com}{\underline{rishitsaxena55@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/rishit-saxena-12922531b}{\underline{LinkedIn}} $|$
+    \href{https://github.com/RishitSaxena55}{\underline{GitHub}} $|$
+    \href{https://rishitsaxena55.github.io}{\underline{Portfolio}} $|$
+    \href{https://x.com/SaxenaRishit55}{\underline{X}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology Guwahati}{Guwahati, India}
+      {Bachelor of Technology in Computer Science \& Engineering; CPI: 9.23/10}{Aug. 2024 -- May 2028}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Research Intern}{May 2025 -- Present}
+      {Indian Institute of Information Technology Guwahati}{Guwahati, India}
+      \resumeItemListStart
+        \resumeItem{Researching \textbf{Early Exit Networks (EENs)} for efficient inference in resource-constrained environments}
+        \resumeItem{Developed \textbf{INT8 quantization pipelines} achieving 4.5ms CPU inference for real-time applications}
+        \resumeItem{Working on model compression techniques for edge deployment of Generative AI systems}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {ML Club Coordinator}{Aug 2025 -- Present}
+      {Maverics, Indian Institute of Information Technology Guwahati}{Guwahati, India}
+      \resumeItemListStart
+        \resumeItem{Leading AI/ML community with 50+ active members; organizing workshops on Deep Learning and Computer Vision}
+        \resumeItem{Mentoring students on research projects in neural rendering, object detection, and efficient ML}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{3D Gaussian Splatting} $|$ \emph{PyTorch, Differentiable Rendering, Spherical Harmonics}}{\href{https://github.com/RishitSaxena55/gaussian-splatting-pytorch}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Built complete differentiable Gaussian rasterizer from scratch achieving real-time novel view synthesis}
+            \resumeItem{Implemented 3D-to-2D projection, Spherical Harmonics for view-dependent color, adaptive density control}
+            \resumeItem{Developed Clone/Split/Prune strategies scaling from 50K to 300K+ Gaussians during training}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{NeRF: Neural Radiance Fields} $|$ \emph{PyTorch, Volume Rendering, Neural Rendering}}{\href{https://github.com/RishitSaxena55/NeRF-PyTorch-}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Engineered differentiable volume rendering pipeline from scratch with positional encoding}
+            \resumeItem{Implemented hierarchical sampling (coarse-to-fine) for computational efficiency}
+            \resumeItem{Achieved photo-realistic 3D reconstruction with novel view synthesis capabilities}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Faster R-CNN: Object Detection} $|$ \emph{PyTorch, Deep Learning, Computer Vision}}{\href{https://github.com/RishitSaxena55/Faster-R-CNN}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Implemented complete Faster R-CNN architecture from scratch including Region Proposal Network}
+            \resumeItem{Built RoI pooling layer and multi-task loss function; trained on Pascal VOC dataset}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{TorchiFy-v1: Deep Learning Framework} $|$ \emph{Python, Autograd, Transformers}}{\href{https://github.com/RishitSaxena55/TorchiFy-v1}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Built DL framework from first principles with custom autograd engine and computational graph}
+            \resumeItem{Implemented Multi-Head Attention and LayerNorm with custom backward passes; supports GPT/Whisper}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, C, Java, SQL, CUDA} \\
+     \textbf{ML Frameworks}{: PyTorch, TensorFlow, JAX, Scikit-learn, NumPy, Pandas, Weights \& Biases} \\
+     \textbf{3D Vision}{: 3D Gaussian Splatting, NeRF, Differentiable Rendering, Volume Rendering, SLAM, SfM} \\
+     \textbf{Generative AI}{: Transformers, LLMs, RAG, LoRA/PEFT, LangChain, LangGraph, GANs, VAEs} \\
+     \textbf{Efficient ML}{: Quantization (INT8), Pruning, Early Exit Networks, ONNX, TFLite, Edge Deployment}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

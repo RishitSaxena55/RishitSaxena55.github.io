@@ -1,0 +1,174 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy Resume/CV
+% XeLaTeX Template
+% Author: Rishit Saxena
+% Based on: https://github.com/deedy/Deedy-Resume
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Rishit}{Saxena}{
+\urlstyle{same}\href{https://rishitsaxena55.github.io}{rishitsaxena55.github.io} | 
+\href{mailto:rishitsaxena55@gmail.com}{rishitsaxena55@gmail.com} | +91 7082968644 \\
+\href{https://github.com/RishitSaxena55}{github.com/RishitSaxena55} | 
+\href{https://linkedin.com/in/rishit-saxena-12922531b}{linkedin.com/in/rishit-saxena} |
+\href{https://x.com/SaxenaRishit55}{x.com/SaxenaRishit55}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COLUMN ONE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Indian Institute of Information Technology Guwahati}
+\descript{B.Tech in Computer Science}
+\location{Aug 2024 - Apr 2028 | Guwahati, India}
+\location{CPI: 9.23 / 10.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+Python \textbullet{} C++ \textbullet{} C \textbullet{} CUDA \\
+Java \textbullet{} SQL
+\sectionsep
+
+\subsection{Frameworks}
+PyTorch \textbullet{} TensorFlow \textbullet{} JAX \\
+Scikit-learn \textbullet{} NumPy \textbullet{} Pandas \\
+FastAPI \textbullet{} Git \textbullet{} W\&B
+\sectionsep
+
+\subsection{3D Vision}
+3D Gaussian Splatting \\
+Neural Radiance Fields (NeRF) \\
+Differentiable Rendering \\
+Volume Rendering \textbullet{} SLAM \\
+Spherical Harmonics
+\sectionsep
+
+\subsection{Generative AI}
+Transformers \textbullet{} LLMs \\
+RAG \textbullet{} LoRA/PEFT \\
+LangChain \textbullet{} GANs \textbullet{} VAEs
+\sectionsep
+
+\subsection{Efficient ML}
+Quantization \textbullet{} Pruning \\
+Early Exit Networks \\
+ONNX \textbullet{} TFLite
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Indian Institute of Information Technology Guwahati}
+\descript{| Research Intern}
+\location{May 2025 – Present}
+\vspace{\topsep}
+\begin{tightemize}
+\item Early Exit Networks for efficient inference
+\item Quantization for edge deployment
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Maverics}
+\descript{| ML Club Coordinator}
+\location{Aug 2025 – Present}
+\begin{tightemize}
+\item Leading AI community, mentoring 50+ students
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COLUMN TWO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research Projects}
+
+\runsubsection{3D Gaussian Splatting}
+\descript{| PyTorch, Differentiable Rendering}
+\location{\href{https://github.com/RishitSaxena55/gaussian-splatting-pytorch}{github.com/RishitSaxena55/gaussian-splatting-pytorch}}
+Built differentiable Gaussian rasterizer from scratch. Implemented 3D-to-2D projection, Spherical Harmonics for view-dependent color, adaptive density control (Clone/Split/Prune) scaling 50K→300K+ Gaussians.
+\sectionsep
+
+\runsubsection{NeRF: Neural Radiance Fields}
+\descript{| PyTorch, Neural Rendering}
+\location{\href{https://github.com/RishitSaxena55/NeRF-PyTorch-}{github.com/RishitSaxena55/NeRF-PyTorch-}}
+Engineered differentiable volume rendering pipeline from scratch. Implemented positional encoding for high-frequency details, hierarchical sampling for efficiency. Achieved photo-realistic 3D reconstruction.
+\sectionsep
+
+\runsubsection{Faster R-CNN: Object Detection}
+\descript{| PyTorch, Computer Vision}
+\location{\href{https://github.com/RishitSaxena55/Faster-R-CNN}{github.com/RishitSaxena55/Faster-R-CNN}}
+Implemented complete Faster R-CNN pipeline from scratch. Built Region Proposal Network (RPN), RoI pooling, and multi-task loss. Trained on Pascal VOC with anchor-based detection.
+\sectionsep
+
+\runsubsection{TorchiFy-v1: DL Framework}
+\descript{| Python, Autograd, Transformers}
+\location{\href{https://github.com/RishitSaxena55/TorchiFy-v1}{github.com/RishitSaxena55/TorchiFy-v1}}
+Built DL framework from first principles. Custom forward/backward for Transformers (Multi-Head Attention, LayerNorm). Supports GPT \& Whisper architectures with transparent gradient flow.
+\sectionsep
+
+\runsubsection{EENet - Early Exit Networks}
+\descript{| ResNet, Efficient ML}
+\location{\href{https://github.com/RishitSaxena55/EENet}{github.com/RishitSaxena55/EENet}}
+Built Early Exit Networks with ResNet backbone for resource-efficient inference. Supports MNIST, CIFAR10, SVHN, Tiny-ImageNet, ImageNet.
+\sectionsep
+
+\runsubsection{AlphaEvolve: LLM-Driven Agent}
+\descript{| LLMs, Generative AI}
+\location{\href{https://github.com/RishitSaxena55/AlphaEvolve}{github.com/RishitSaxena55/AlphaEvolve}}
+Evolutionary agent using LLMs for algorithmic discovery. Inspired by DeepMind's research. Demonstrates Generative AI for automated search \& optimization.
+\sectionsep
+
+\runsubsection{GBC Net: Medical Image Classification}
+\descript{| PyTorch, Medical Imaging}
+\location{\href{https://github.com/RishitSaxena55/GBC-Net}{github.com/RishitSaxena55/GBC-Net}}
+Deep CNN for Gallbladder Cancer detection from ultrasound images. Custom architecture with data augmentation, achieving high sensitivity for early diagnosis.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ADDITIONAL PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Additional Projects}
+\textbf{WhisprNet} - Transformer ASR (Multimodal) | 
+\textbf{Medisyn} - Medical RAG System | 
+\textbf{Face Recognition} - FaceNet/Keras | 
+\textbf{DMS Mini} - Real-time Edge AI Perception
+\sectionsep
+
+\end{minipage} 
+\end{document}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 11pt;
+            color: #000;
+            line-height: 1.5;
+            max-width: 800px;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        a {
+            color: #1155cc;
+            text-decoration: underline;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        .subject {
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="subject">
+        To: vishnu@msu.edu<br><br>
+        Subject: Summer Internship Application: Human Analysis Lab - IIIT Guwahati Undergrad (Technical Challenge
+        Solution Attached)
+    </div>
+
+    <p>Dear Professor Boddeti,</p>
+
+    <p>I am <strong>Rishit Saxena</strong>, a second-year undergraduate <strong>Computer Science and
+            Engineering</strong> student at <strong>Indian Institute of Information Technology Guwahati</strong> (IIIT
+        Guwahati), India (CPI: 9.23/10). I am applying for a <strong>summer research internship</strong> in the
+        <strong>Human Analysis Lab</strong> for <strong>May–August 2026</strong> (4 months).</p>
+
+    <p><strong>Attachments (as required):</strong></p>
+    <ol>
+        <li>Resume</li>
+        <li>Transcripts</li>
+        <li>Technical Challenge Solution:
+            <ul>
+                <li><code>Block_Diagonal_Matrix_Solution.pdf</code> — Technical write-up</li>
+                <li><code>block_diagonal_matrix.py</code> — Implementation</li>
+            </ul>
+        </li>
+    </ol>
+
+    <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+    <p><strong>Technical Challenge — My Approach:</strong></p>
+
+    <p>I designed a data structure that exploits the closure property of diagonal matrices under algebraic operations:
+    </p>
+
+    <table>
+        <tr>
+            <th>Operation</th>
+            <th>Naive</th>
+            <th>My Solution</th>
+            <th>Speedup</th>
+        </tr>
+        <tr>
+            <td>Storage</td>
+            <td>O(n²d²)</td>
+            <td>O(n²d)</td>
+            <td><strong>d×</strong></td>
+        </tr>
+        <tr>
+            <td>Multiplication</td>
+            <td>O(n³d³)</td>
+            <td>O(n³d)</td>
+            <td><strong>d²×</strong></td>
+        </tr>
+        <tr>
+            <td>Inverse</td>
+            <td>O(n³d³)</td>
+            <td>O(n³d)</td>
+            <td><strong>d²×</strong></td>
+        </tr>
+    </table>
+
+    <p><em>Key insight:</em> Since D₁D₂ = diag(a₁b₁, ..., aₐbₐ) for diagonal matrices, we can work entirely with
+        d-element vectors instead of d×d matrices.</p>
+
+    <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+    <p><strong>Why HAL Excites Me:</strong></p>
+
+    <table>
+        <tr>
+            <th>Your Paper</th>
+            <th>What Fascinates Me</th>
+        </tr>
+        <tr>
+            <td><strong>PolyJuice</strong> (NeurIPS 2025)</td>
+            <td>Black-box red teaming exposes the fragility of synthetic image detectors — understanding failure modes
+                is essential for trustworthy AI</td>
+        </tr>
+        <tr>
+            <td><strong>InPhyRe</strong> (CVPR 2024)</td>
+            <td>Revealing that LMMs struggle with inductive physical reasoning shows the gap between pattern matching
+                and true understanding</td>
+        </tr>
+        <tr>
+            <td><strong>SecureRAG</strong> (NeurIPSW 2025)</td>
+            <td>End-to-end encryption for RAG systems addresses critical privacy concerns as LLMs handle sensitive data
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Obliviator</strong> (CVPR 2024)</td>
+            <td>Quantifying the cost of concept erasure reveals fundamental tradeoffs in AI safety</td>
+        </tr>
+    </table>
+
+    <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+    <p><strong>What I Bring:</strong></p>
+
+    <table>
+        <tr>
+            <th>My Project</th>
+            <th>Relevance to HAL</th>
+        </tr>
+        <tr>
+            <td><strong><a href="https://github.com/RishitSaxena55/TorchiFy-v1">TorchiFy</a></strong></td>
+            <td>Built DL framework <strong>from scratch</strong> with custom backward passes — I understand what happens
+                inside the black box</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://github.com/RishitSaxena55/EENet">EENet</a></strong></td>
+            <td>Early Exit Networks for efficient inference — relevant to your work on robust, practical AI systems</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://github.com/RishitSaxena55/gaussian-splatting-pytorch">3D Gaussian
+                        Splatting</a></strong></td>
+            <td>Differentiable rasterizer from scratch (Spherical Harmonics, Jacobians) — strong mathematical
+                foundations</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://github.com/RishitSaxena55/NeRF-PyTorch-">NeRF</a></strong></td>
+            <td>Volume rendering from scratch — demonstrates ability to implement complex algorithms</td>
+        </tr>
+    </table>
+
+    <p><strong>Current Research:</strong> Early Exit Networks and INT8 quantization for edge deployment at IIIT Guwahati
+    </p>
+
+    <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+    <p><strong>Links:</strong> <a href="https://rishitsaxena55.github.io">Portfolio</a> | <a
+            href="https://github.com/RishitSaxena55">GitHub</a> | <a
+            href="https://linkedin.com/in/rishit-saxena-12922531b">LinkedIn</a></p>
+
+    <p>I am excited about contributing to HAL's mission of building trustworthy AI systems.</p>
+
+    <p>Best regards,</p>
+
+    <p><strong>Rishit Saxena</strong><br>
+        rishitsaxena55@gmail.com | +91 7082968644</p>
+
+</body>
+
+</html>

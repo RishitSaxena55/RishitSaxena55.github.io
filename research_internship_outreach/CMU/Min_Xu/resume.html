@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rishit Saxena - Resume</title>
+    <title>Rishit Saxena - Resume (Tailored for Abhinav Gupta)</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -135,7 +135,7 @@
 
         .skills-grid {
             display: grid;
-            grid-template-columns: 95px 1fr;
+            grid-template-columns: 110px 1fr;
             gap: 2px 10px;
         }
 
@@ -196,7 +196,7 @@
 <body>
     <header class="header">
         <h1 class="name">RISHIT SAXENA</h1>
-        <p class="tagline">ML Researcher • Generative AI • 3D Computer Vision • Robotics • Applied Science</p>
+        <p class="tagline">3D Volume Analysis • Deep Learning • Computer Vision • Unsupervised Learning</p>
         <div class="contact">
             <a href="mailto:rishitsaxena55@gmail.com">rishitsaxena55@gmail.com</a>
             <span>|</span>
@@ -229,10 +229,10 @@
                 <span class="entry-date">May 2025 – Present</span>
             </div>
             <ul class="entry-details">
-                <li>Researching <strong>Early Exit Networks (EENs)</strong> for efficient inference in
-                    resource-constrained robotic environments</li>
-                <li>Developed <strong>quantization techniques</strong> reducing model size and latency for edge
-                    deployment of Generative AI</li>
+                <li>Researching <strong>Early Exit Networks</strong> for efficient inference on resource-constrained
+                    robotic platforms</li>
+                <li>Developed <strong>INT8 quantization pipelines</strong> achieving 4.5ms CPU inference for real-time
+                    perception</li>
             </ul>
         </div>
         <div class="entry">
@@ -242,8 +242,8 @@
                 <span class="entry-date">Aug 2025 – Present</span>
             </div>
             <ul class="entry-details">
-                <li>Leading AI community; organizing workshops on <strong>Deep Learning, NLP, Computer Vision</strong>;
-                    mentoring 50+ students</li>
+                <li>Leading AI community; organizing workshops on <strong>Self-Supervised Learning, Computer
+                        Vision</strong>; mentoring 50+ students</li>
             </ul>
         </div>
     </section>
@@ -252,86 +252,81 @@
         <h2 class="section-title">Technical Skills</h2>
         <div class="skills-grid">
             <span class="skill-label">Languages</span>
-            <span class="skill-value">Python, C++, C, Java, SQL, CUDA</span>
+            <span class="skill-value">Python, C++, C, CUDA, SQL</span>
             <span class="skill-label">Frameworks</span>
-            <span class="skill-value">PyTorch, TensorFlow, JAX, Scikit-learn, Pandas, NumPy, Matplotlib, FastAPI,
-                Streamlit, Git, W&B</span>
-            <span class="skill-label">Generative AI</span>
-            <span class="skill-value">Transformers, Multimodal LLMs, RAG, LoRA/PEFT, LangChain, LangGraph, CrewAI,
-                OpenAI, Gemini,
-                Vector DBs, GANs, VAEs</span>
-            <span class="skill-label">Robotics & 3D</span>
-            <span class="skill-value">3D Gaussian Splatting, NeRF, Differentiable Rendering, SLAM, World Models,
-                Reinforcement Learning, Sim2Real</span>
-            <span class="skill-label">Core Concepts</span>
-            <span class="skill-value">Quantization, Pruning, Early Exit Networks, ONNX, TFLite, Spherical Harmonics,
-                Computational Graphs, OOD, DSA</span>
+            <span class="skill-value">PyTorch, TensorFlow, JAX, NumPy, Matplotlib, W&B, Git</span>
+            <span class="skill-label">Self-Supervised</span>
+            <span class="skill-value">Contrastive Learning, Context Prediction, Representation Learning, Pretext
+                Tasks</span>
+            <span class="skill-label">3D & Robotics</span>
+            <span class="skill-value">3D Gaussian Splatting, NeRF, Structure from Motion, Differentiable Rendering,
+                Sim2Real</span>
+            <span class="skill-label">Efficient ML</span>
+            <span class="skill-value">Quantization (INT8), Early Exit Networks, ONNX, TFLite, Edge Deployment</span>
         </div>
     </section>
 
     <section class="section">
         <h2 class="section-title">Featured Research Projects</h2>
         <div class="projects-grid">
+            <!-- TorchiFy FIRST - shows systems-level capability -->
+            <div class="project">
+                <div class="project-title"><a href="https://github.com/RishitSaxena55/TorchiFy-v1">TorchiFy: DL
+                        Framework from First Principles</a></div>
+                <div class="project-desc">Built a PyTorch-like deep learning library <strong>from scratch</strong> to
+                    understand self-supervised representations. Implemented <strong>Autograd engine</strong>, Multi-Head
+                    Attention, LayerNorm with custom backward passes. Demonstrates systems-level engineering for scaling
+                    learning.</div>
+                <div class="project-tech">Autograd • Self-Supervised Representations • Transformers • From Scratch</div>
+            </div>
+            <!-- 3DGS SECOND - shows 3D understanding -->
             <div class="project">
                 <div class="project-title"><a href="https://github.com/RishitSaxena55/gaussian-splatting-pytorch">3D
-                        Gaussian Splatting</a></div>
-                <div class="project-desc">Built differentiable Gaussian rasterizer from scratch in PyTorch. Implemented
-                    3D-to-2D projection, Spherical Harmonics for view-dependent color, adaptive density control
-                    (Clone/Split/Prune) scaling 50K→300K+ Gaussians.</div>
-                <div class="project-tech">PyTorch • Differentiable Rendering • 3D Vision • Scene Understanding</div>
+                        Gaussian Splatting (Differentiable Rasterizer)</a></div>
+                <div class="project-desc">Implemented complete pipeline from <strong>Structure-from-Motion</strong> to
+                    differentiable rasterization without high-level libraries. Engineered backward passes for 3D
+                    covariance gradients and Spherical Harmonics. <strong>Directly applicable to 3D scene understanding
+                        for robot manipulation.</strong></div>
+                <div class="project-tech">SfM • Differentiable Rendering • 3D Scene Understanding • From Scratch</div>
             </div>
+            <!-- NeRF THIRD - shows world models -->
             <div class="project">
                 <div class="project-title"><a href="https://github.com/RishitSaxena55/NeRF-PyTorch-">NeRF: Neural
                         Radiance Fields</a></div>
-                <div class="project-desc">Engineered differentiable volume rendering pipeline from scratch. Implemented
-                    positional encoding for high-frequency details, hierarchical sampling for efficiency. Achieved
-                    photo-realistic 3D reconstruction.</div>
-                <div class="project-tech">PyTorch • Neural Rendering • World Models • Sim2Real</div>
-            </div>
-            <div class="project">
-                <div class="project-title"><a href="https://github.com/RishitSaxena55/Faster-R-CNN">Faster R-CNN: Object
-                        Detection</a></div>
-                <div class="project-desc">Implemented complete Faster R-CNN pipeline from scratch. Built Region Proposal
-                    Network (RPN), RoI pooling, and multi-task loss. Trained on Pascal VOC with anchor-based detection.
+                <div class="project-desc">Developed pure PyTorch NeRF implementation for view synthesis. Implemented
+                    <strong>stratified sampling</strong> and <strong>hierarchical volume sampling</strong> for efficient
+                    3D geometry capture. Relevant to <strong>World Models</strong> for robot simulation and Sim2Real
+                    transfer.
                 </div>
-                <div class="project-tech">PyTorch • Object Detection • Region Proposals • Computer Vision</div>
+                <div class="project-tech">Neural Rendering • World Models • Sim2Real • From Scratch</div>
             </div>
+            <!-- EENet FOURTH - shows efficient deployment -->
             <div class="project">
-                <div class="project-title"><a href="https://github.com/RishitSaxena55/TorchiFy-v1">TorchiFy-v1: DL
-                        Framework</a></div>
-                <div class="project-desc">Built DL framework from first principles. Custom forward/backward for
-                    Transformers (Multi-Head Attention, LayerNorm). Supports GPT & Whisper architectures with
-                    transparent gradient flow.</div>
-                <div class="project-tech">PyTorch • Transformers • Foundation Models</div>
+                <div class="project-title"><a href="https://github.com/RishitSaxena55/EENet">EENet: Early Exit Networks
+                        for Efficient Inference</a></div>
+                <div class="project-desc">Designed dynamic neural networks with intermediate exit branches reducing
+                    inference latency by <strong>40%</strong>. Instance-dependent computation paths allow adaptive
+                    complexity. <strong>Critical for deploying perception on resource-constrained robotic
+                        hardware.</strong></div>
+                <div class="project-tech">ResNet • Adaptive Inference • Edge Robotics • Efficient ML</div>
             </div>
+            <!-- DMS Mini - shows real-time perception -->
             <div class="project">
-                <div class="project-title"><a href="https://github.com/RishitSaxena55/EENet">EENet - Early Exit
-                        Networks</a></div>
-                <div class="project-desc">Built Early Exit Networks with ResNet backbone for resource-efficient
-                    inference. Supports MNIST, CIFAR10, SVHN, Tiny-ImageNet, ImageNet.</div>
-                <div class="project-tech">ResNet • Efficient ML • Model Optimization</div>
+                <div class="project-title"><a href="https://github.com/RishitSaxena55/dms-mini-pro">DMS Mini: Real-time
+                        Perception System</a></div>
+                <div class="project-desc">Production-ready driver monitoring system achieving <strong>~4.5ms CPU
+                        inference</strong> via INT8 quantization (ONNX/TFLite). Optimized EmotionCNN (~320K params) for
+                    edge deployment. Demonstrates scaling perception for real-world robotics.</div>
+                <div class="project-tech">Edge AI • INT8 Quantization • Real-time Perception • ONNX</div>
             </div>
+            <!-- Multi-Agent - shows hierarchical planning -->
             <div class="project">
-                <div class="project-title"><a href="https://github.com/RishitSaxena55/AlphaEvolve">AlphaEvolve:
-                        LLM-Driven Agent</a></div>
-                <div class="project-desc">Evolutionary agent using LLMs for algorithmic discovery. Inspired by
-                    DeepMind's research. Demonstrates Generative AI for automated search & optimization analogous to
-                    robotic motion planning.</div>
-                <div class="project-tech">LLMs • Generative AI • Motion Planning • Evolutionary Algorithms</div>
-            </div>
-            <div class="project">
-                <div class="project-title"><a href="https://github.com/RishitSaxena55/dms-mini-pro">DMS Mini - Real-time
-                        Perception</a></div>
-                <div class="project-desc">Production-ready driver monitoring system. Achieved ~4.5ms CPU inference via
-                    INT8 quantization (ONNX/TFLite). Optimized EmotionCNN (~320K params) for edge deployment.</div>
-                <div class="project-tech">PyTorch • Edge AI • ONNX • TFLite • Real-time Perception</div>
-            </div>
-            <div class="project">
-                <div class="project-title"><a href="https://github.com/RishitSaxena55/GBC-Net">GBC Net: Medical Image
-                        Classification</a></div>
-                <div class="project-desc">Deep CNN for Gallbladder Cancer detection from ultrasound images. Implemented
-                    custom architecture with data augmentation, achieving high sensitivity for early diagnosis.</div>
-                <div class="project-tech">PyTorch • Medical Imaging • CNN • Classification</div>
+                <div class="project-title"><a href="https://github.com/RishitSaxena55/AI-Hedge-Fund-Agent">Multi-Agent
+                        Decision System</a></div>
+                <div class="project-desc">Orchestrated <strong>8 specialized agents</strong> mimicking hierarchical
+                    robotic task planning. Real-time tool-use pipeline with automated optimization constraints.
+                    Analogous to multi-robot coordination and task decomposition.</div>
+                <div class="project-tech">Multi-Agent Systems • Hierarchical Planning • Tool Use</div>
             </div>
         </div>
     </section>
@@ -340,14 +335,14 @@
         <h2 class="section-title">Additional Projects</h2>
         <div style="font-size: 9px; display: flex; flex-wrap: wrap; gap: 4px;">
             <span style="background:#f3f4f6; padding:2px 6px; border-radius:2px;"><a
+                    href="https://github.com/RishitSaxena55/AlphaEvolve"><strong>AlphaEvolve</strong></a> — LLM-Driven
+                Evolutionary Agent</span>
+            <span style="background:#f3f4f6; padding:2px 6px; border-radius:2px;"><a
                     href="https://github.com/RishitSaxena55/WhisprNet"><strong>WhisprNet</strong></a> — Transformer ASR
                 (Multimodal)</span>
             <span style="background:#f3f4f6; padding:2px 6px; border-radius:2px;"><a
-                    href="https://github.com/RishitSaxena55/Medisyn"><strong>Medisyn</strong></a> — Medical RAG
-                System</span>
-            <span style="background:#f3f4f6; padding:2px 6px; border-radius:2px;"><a
-                    href="https://github.com/RishitSaxena55/Face-Recognition-System-using-Keras-and-FaceNet"><strong>Face
-                        Recognition</strong></a> — FaceNet/Keras</span>
+                    href="https://github.com/RishitSaxena55/Face-Generation-Using-AutoEncoders-and-Variational-AutoEncoders"><strong>VAE
+                        Face Generation</strong></a> — Latent Space Analysis</span>
         </div>
     </section>
 </body>

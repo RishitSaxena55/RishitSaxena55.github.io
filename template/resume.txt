@@ -1,0 +1,109 @@
+================================================================================
+                              RISHIT SAXENA
+================================================================================
+
+ML Researcher | 3D Computer Vision | Generative AI | Efficient ML
+
+Email: rishitsaxena55@gmail.com
+Phone: +91 7082968644
+LinkedIn: linkedin.com/in/rishit-saxena-12922531b
+GitHub: github.com/RishitSaxena55
+Portfolio: rishitsaxena55.github.io
+X: x.com/SaxenaRishit55
+
+================================================================================
+                              EDUCATION
+================================================================================
+
+B.Tech in Computer Science & Engineering
+Indian Institute of Information Technology Guwahati
+Aug 2024 - Apr 2028 | CPI: 9.23/10.0
+
+================================================================================
+                              EXPERIENCE
+================================================================================
+
+RESEARCH INTERN | Indian Institute of Information Technology Guwahati | May 2025 - Present
+- Researching Early Exit Networks (EENs) for efficient inference in 
+  resource-constrained robotic environments
+- Developed INT8 quantization pipelines achieving 4.5ms CPU inference for 
+  real-time applications
+- Working on model compression techniques for edge deployment of Generative AI
+
+ML CLUB COORDINATOR | Maverics, Indian Institute of Information Technology Guwahati | Aug 2025 - Present
+- Leading AI/ML community with 50+ active members
+- Organizing workshops on Deep Learning, NLP, and Computer Vision
+- Mentoring students on research projects in neural rendering and efficient ML
+
+================================================================================
+                           RESEARCH PROJECTS
+================================================================================
+
+3D GAUSSIAN SPLATTING
+GitHub: github.com/RishitSaxena55/gaussian-splatting-pytorch
+Tech: PyTorch, Differentiable Rendering, Spherical Harmonics
+- Built complete differentiable Gaussian rasterizer from scratch
+- Implemented 3D-to-2D projection, Spherical Harmonics for view-dependent color
+- Developed Clone/Split/Prune strategies scaling 50K to 300K+ Gaussians
+
+NERF: NEURAL RADIANCE FIELDS
+GitHub: github.com/RishitSaxena55/NeRF-PyTorch-
+Tech: PyTorch, Volume Rendering, Neural Rendering
+- Engineered differentiable volume rendering pipeline from scratch
+- Implemented positional encoding and hierarchical sampling
+- Achieved photo-realistic 3D reconstruction with novel view synthesis
+
+FASTER R-CNN: OBJECT DETECTION
+GitHub: github.com/RishitSaxena55/Faster-R-CNN
+Tech: PyTorch, Deep Learning, Computer Vision
+- Implemented complete Faster R-CNN architecture from scratch
+- Built Region Proposal Network (RPN), RoI pooling, and multi-task loss
+- Trained on Pascal VOC dataset with anchor-based detection
+
+TORCHIFY-V1: DEEP LEARNING FRAMEWORK
+GitHub: github.com/RishitSaxena55/TorchiFy-v1
+Tech: Python, Autograd, Transformers
+- Built DL framework from first principles with custom autograd engine
+- Implemented Multi-Head Attention and LayerNorm with custom backward passes
+- Supports GPT and Whisper architectures with transparent gradient flow
+
+EENET - EARLY EXIT NETWORKS
+GitHub: github.com/RishitSaxena55/EENet
+Tech: ResNet, Efficient ML, Model Optimization
+- Built Early Exit Networks with ResNet backbone for efficient inference
+- Supports MNIST, CIFAR10, SVHN, Tiny-ImageNet, ImageNet
+
+GBC NET: MEDICAL IMAGE CLASSIFICATION
+GitHub: github.com/RishitSaxena55/GBC-Net
+Tech: PyTorch, Medical Imaging, CNN
+- Deep CNN for Gallbladder Cancer detection from ultrasound images
+- Custom architecture with data augmentation for high sensitivity
+
+================================================================================
+                           TECHNICAL SKILLS
+================================================================================
+
+LANGUAGES:      Python, C++, C, Java, SQL, CUDA
+
+ML FRAMEWORKS:  PyTorch, TensorFlow, JAX, Scikit-learn, NumPy, Pandas, W&B
+
+3D VISION:      3D Gaussian Splatting, NeRF, Differentiable Rendering, 
+                Volume Rendering, SLAM, Structure from Motion (SfM)
+
+GENERATIVE AI:  Transformers, LLMs, RAG, LoRA/PEFT, LangChain, LangGraph,
+                GANs, VAEs, OpenAI API, Gemini API
+
+EFFICIENT ML:   Quantization (INT8), Pruning, Early Exit Networks, 
+                ONNX, TFLite, Edge Deployment
+
+================================================================================
+                         ADDITIONAL PROJECTS
+================================================================================
+
+- WhisprNet: Transformer ASR (Multimodal)
+- Medisyn: Medical RAG System
+- Face Recognition: FaceNet/Keras implementation
+- DMS Mini: Real-time Edge AI Perception (~4.5ms inference)
+- AlphaEvolve: LLM-Driven Evolutionary Agent
+
+================================================================================

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 11pt;
+            color: #000;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        a {
+            color: #1155cc;
+            text-decoration: underline;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        th {
+            background: #f8f9fa;
+        }
+
+        .subject {
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 20px 0;
+        }
+
+        .highlight {
+            background: #fffbeb;
+            padding: 12px;
+            border-left: 4px solid #f59e0b;
+            margin: 15px 0;
+        }
+
+        .warning {
+            background: #fef2f2;
+            padding: 12px;
+            border-left: 4px solid #ef4444;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="subject">
+        <strong>To:</strong> (via CMU directory or website contact)<br><br>
+        <strong>Subject:</strong> Exceptional Alignment with Sparse-View 3D Research — From-Scratch 3DGS/NeRF
+        Implementer Seeking Guidance
+    </div>
+
+    <p>Dear Professor Tulsiani,</p>
+
+    <p>I am <strong>Rishit Saxena</strong>, a second-year <strong>Computer Science</strong> student at <strong>Indian
+            Institute of Information Technology Guwahati</strong>, India (CPI: <strong>9.23/10</strong>).</p>
+
+    <div class="warning">
+        I understand from your website that you are <strong>not currently accepting interns or visitors</strong>. I am
+        reaching out nonetheless because the alignment between my work and your research is exceptional, and I would
+        deeply value any guidance or alternative paths you might suggest.
+    </div>
+
+    <hr class="divider">
+
+    <div class="highlight">
+        <strong>Why I'm Writing:</strong> Your work on <strong>sparse-view 3D reconstruction</strong> (DiffusionSfM,
+        SparseFusion, Cameras as Rays) directly mirrors what I've independently built as an undergraduate. I implemented
+        both <strong>3D Gaussian Splatting</strong> and <strong>NeRF</strong> entirely myself — deriving and coding the
+        backward passes, not using existing libraries.
+    </div>
+
+    <hr class="divider">
+
+    <p><strong>My Work — Built From Scratch:</strong></p>
+
+    <table>
+        <tr>
+            <th style="width: 25%;">My Project</th>
+            <th style="width: 40%;">What I Built</th>
+            <th style="width: 35%;">Connection to Your Research</th>
+        </tr>
+        <tr>
+            <td><strong><a href="https://github.com/RishitSaxena55/gaussian-splatting-pytorch">3D Gaussian
+                        Splatting</a></strong></td>
+            <td>SfM → differentiable rasterizer with custom 3D covariance + SH backward passes, adaptive density control
+            </td>
+            <td><strong>DiffusionSfM</strong> (CVPR 2025) — I understand the SfM + rendering pipeline deeply</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://github.com/RishitSaxena55/NeRF-PyTorch-">NeRF</a></strong></td>
+            <td>Pure PyTorch: stratified + hierarchical sampling, positional encoding, volume rendering — all custom
+            </td>
+            <td>Ray-based like <strong>"Cameras as Rays"</strong> (ICLR 2024) — fundamental understanding</td>
+        </tr>
+    </table>
+
+    <hr class="divider">
+
+    <p><strong>My Request:</strong></p>
+    <ul>
+        <li>If there's any possibility of an exception for a strongly aligned candidate, I'd be honored to contribute.
+        </li>
+        <li>Otherwise, I'd appreciate guidance on remote contribution or recommendations for collaborators.</li>
+    </ul>
+
+    <p>Thank you for your time. Even if an internship is not possible, I would value any feedback on my work.</p>
+
+    <p><strong>What I'm Seeking:</strong> I am eager to contribute to research on sparse-view 3D reconstruction,
+        differentiable rendering, or ray-based representations <strong>remotely starting immediately</strong>, and would
+        also welcome the opportunity for an <strong>on-site position (Summer 2026)</strong> if available. I am flexible
+        and committed to meaningful research contributions in any format.</p>
+
+    <p><strong>Specific Direction I'd Love to Explore:</strong> DiffusionSfM predicts poses via ray diffusion — but
+        initializes Gaussians from these noisy estimates. I'd love to explore <strong>uncertainty-aware Gaussian
+            initialization</strong> that propagates pose confidence to Gaussian covariances, improving robustness to
+        pose errors.</p>
+
+    <p>I've attached my resume and would be happy to share code samples or discuss my implementations in more detail.
+    </p>
+
+    <p>Best regards,</p>
+
+    <p><strong>Rishit Saxena</strong><br>
+        rishitsaxena55@gmail.com | +91 7082968644 | <a href="https://x.com/SaxenaRishit55">x.com/SaxenaRishit55</a><br>
+        <a href="https://rishitsaxena55.github.io">Portfolio</a> | <a
+            href="https://github.com/RishitSaxena55">GitHub</a> | <a
+            href="https://linkedin.com/in/rishit-saxena-12922531b">LinkedIn</a>
+    </p>
+
+</body>
+
+</html>
